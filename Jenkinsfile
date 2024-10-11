@@ -11,6 +11,11 @@ pipeline {
                 sh 'ls'
             }
         }
+        stage('git clone'){
+            steps {
+                sh 'git clone https://github.com/Aakibgithuber/deployment-of-youtube.git'
+            }
+        }
     }
 
 }
