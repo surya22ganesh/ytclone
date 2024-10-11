@@ -20,7 +20,7 @@ pipeline {
             steps{
                 sh ''' 
                     cd deployment-of-youtube
-                    docker build -t surya22ganesh/ytclone .
+                    sudo docker build -t surya22ganesh/ytclone .
                 '''
 
             }
