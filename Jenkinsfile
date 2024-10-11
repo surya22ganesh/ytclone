@@ -16,6 +16,15 @@ pipeline {
                 sh 'git clone https://github.com/Aakibgithuber/deployment-of-youtube.git'
             }
         }
+        stage('docker build'){
+            steps{
+                sh ''' 
+                    cd deployment-of-youtube
+                    docker build -t surya22ganesh/ytclone .
+                '''
+
+            }
+        }
     }
 
 }
